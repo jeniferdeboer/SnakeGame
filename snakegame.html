@@ -1,0 +1,37 @@
+<!doctype HTML>
+<html>
+<head>
+</head>
+<body>
+  <canvas id="gc" width="400" height="400"></canvas>
+  <script>
+    window.onload=function(){
+      canv=document.getElementByID("gc");
+      ctx=canv.getContext("2d");
+      document.addEventListener("keydown", keyPush);
+      setInterval(game,1000/15);
+    }
+
+    xv=yv=0;
+    function game(){
+
+    }
+    keyPush(evt){
+      switch(evt.keyCode){
+        case 37:
+          xv=0;yv=0;
+          break;
+        case 38:
+          xv=0;yv=0;
+          break;
+        case 39:
+          xv=0;yv=0;
+          break;
+        case 37:
+          xv=0;yv=0;
+          break;
+      }
+    }
+  </script>
+</body>
+</html>
